@@ -177,6 +177,9 @@ def seclog(section, *args, attrs=None, update=False):
 def warning(*args):
     log(atten('[Warning]'), *args)
 
+def info(*args):
+    log(note('[Info]'), *args)
+
 
 __all__ = [
     'atten',
@@ -184,6 +187,7 @@ __all__ = [
     'log',
     'seclog',
     'warning',
+    'info',
     'logger',
     'set_high_precision',
     'set_time_mode',
