@@ -180,6 +180,8 @@ def warning(*args):
 def info(*args):
     log(note('[Info]'), *args)
 
+def addHandler(*args):
+    logger.addHandler(*args)
 
 __all__ = [
     'atten',
@@ -193,4 +195,5 @@ __all__ = [
     'set_time_mode',
     'updating',
     'flush',
+    'addHandler'
 ]
