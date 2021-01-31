@@ -69,7 +69,7 @@ class DummyTqdmFile:
 class Formatter(logging.Formatter):
     def __init__(self):
         super().__init__(fmt=None,
-                         datefmt='%H:%M:%S',
+                         datefmt='%m/%d/%Y %H:%M:%S',
                          style='{')
         self._high_precision = False
         self.set_time_mode()
